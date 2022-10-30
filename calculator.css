@@ -1,5 +1,5 @@
 html {  
-    height: 100vh;  
+    height: 130%;  
    display: flex;  
    align-items: center;  
    justify-content: center;  
@@ -18,56 +18,64 @@ html {
    font-family:fantasy;  
    } 
 
+   .row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top: 10px;
+    color: aquamarine;
+   }
+
+   .input-screen{
+    margin-bottom:20px;
+    height: 45px;
+    font-size: 37px;
+    font-style: bold;
+    background-color:white;
+    border-radius:10px;
+    border:2px solid blue;
+}
+
+
     
     
-   input[type=button] {  
+   .button {  
   width: 90px;  
   height: 90px;  
   float: l;  
   padding: 40px;  
   margin: 8px;  
   box-sizing:border-box;  
- background: #eeefec;  
- border: none;  
- font-size: 50px;  
- line-height: 30px;  
- border-radius: 20px;  
- font-weight: 700;  
- color: black;
+  background: #eeefec;  
+  border:2px solid black;
+  font-size: 50px;  
+  line-height: 30px;  
+  border-radius: 20px;  
+  font-weight: 700;  
+  color: black;
   box-shadow: 0px 0px 10px 10px wheat; 
     
 } 
 
- input[type=text] {  
-width: 400px;  
-height: 60px;  
-float: left;  
-padding: 6px;  
-box-sizing:border-box;  
-border:5px;  
-background:white ;
-color: red;  
-text-align: right;  
-font-weight: 900;  
-font-size: 60px;  
-line-height: 100px;  
-margin: 0 0px;  
-box-shadow: 0px 0px 10px 10px wheat;
-border-radius: 20px ;
-}  
+.button:hover{
+  box-shadow:0px 0px 2px 2px white;
+  cursor:pointer;
+  color: red;
+  }
 
- .calculator {  
+ 
+ .calculator-container {  
 background-color: #c0c0c0;  
-box-shadow: 0px 10px 10px 10px #666;  
-border: 5px black;
-border-radius:40px ;
+width:450px;
+padding:20px;
+border-radius:50px;
+border: 1px,solid black;
 }  
 
 .btnTop {  
 color: white;  
 background-color: #6f6f6f;  
 font-size: 14px;  
-margin: auto;  
 width: 50px;  
 height: 25px;  
 }     
